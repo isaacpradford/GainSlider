@@ -28,13 +28,10 @@ public:
     void sliderValueChanged (juce::Slider* slider) override;
 
 private:
-    // This reference is provided as a quick way for your editor to
-    // access the processor object that created it.
-    
+
     // Creates the slider object
     juce::Slider gainSlider;
     
     GainAudioProcessor& audioProcessor;
-
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (GainAudioProcessorEditor)
 };

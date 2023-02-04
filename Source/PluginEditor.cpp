@@ -13,8 +13,7 @@
 GainAudioProcessorEditor::GainAudioProcessorEditor (GainAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
-    // Make sure that before the constructor has finished, you've set the
-    // editor's size to whatever you need it to be.
+
     // Set sliders range and initial value.
     gainSlider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
     gainSlider.setRange(-60.0f, 20.0f, 0.01);
@@ -47,8 +46,7 @@ void GainAudioProcessorEditor::paint (juce::Graphics& g)
 
 void GainAudioProcessorEditor::resized()
 {
-    // This is generally where you'll want to lay out the positions of any
-    // subcomponents in your editor..
+    // Sets location of slider inside of the editor in the VST.
     gainSlider.setBounds(getWidth() / 2 - 50, getHeight() / 2 - 75, 100, 150);
 }
 

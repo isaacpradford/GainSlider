@@ -56,7 +56,7 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
-    // Controls the slider with this variable, mGain
+    // Controls the slider with this variable, mGain, by creating the float as a publicly accessible variable.
     float mGain { 0.5 };
 
 private:
