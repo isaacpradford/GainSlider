@@ -8,7 +8,7 @@ All that being said, this program is nothing more than a 'hello world' into the 
 
 For information on how this was made, I made a youtube video below explaining and included more technical details below.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/b1daWYX_YOY)
 
 # Development Environment
 

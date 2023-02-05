@@ -28,7 +28,6 @@ GainAudioProcessorEditor::GainAudioProcessorEditor (GainAudioProcessor& p)
     // Sets the location and properties of the text box.
     
     gainSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, 50, 20);
-    
     setSize (200, 300);
 }
 
@@ -50,6 +49,8 @@ void GainAudioProcessorEditor::resized()
     gainSlider.setBounds(getWidth() / 2 - 50, getHeight() / 2 - 75, 100, 150);
 }
 
+
+// What does this do?
 void GainAudioProcessorEditor::sliderValueChanged(juce::Slider *slider)
 {
     if (slider == &gainSlider)
